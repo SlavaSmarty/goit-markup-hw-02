@@ -1,7 +1,7 @@
 :root {
     --first-title-color: #FFFFFF;
     --feature-title-color: #2E2F42;
-    --header-logo-color: #4d5ae5;
+    --header-logo-color: #4D5AE5;
     --header-contact-color: #434455;
     --team-background-color: #F4F4FD;
     --btn-background-color: #404BBF;
@@ -11,11 +11,10 @@
 }
 
 body {
-    color: aquamarine;
     font-family: 'Roboto', sans-serif;
     background: var(--first-title-color);
     font-size: 18px;
-    font-style: normal;
+
 }
 
 .list {
@@ -68,9 +67,13 @@ body {
     color: var(--feature-title-color);
 }
 
+.header-link {
+    color: var(--feature-title-color);
+}
+
 .header-link:hover,
 .header-link:focus {
-    color: var(--header-logo-color);
+    color: var(--btn-background-color);
 }
 
 .header-item {}
@@ -88,6 +91,11 @@ body {
     color: var(--header-contact-color);
 }
 
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--btn-background-color);
+}
+
 .header-tel {
     font-style: normal;
     font-weight: 400;
@@ -95,7 +103,14 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-contact-color);
+
 }
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--btn-background-color);
+}
+
 
 /* --hero-- */
 .hero {
@@ -120,7 +135,14 @@ body {
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--first-title-color);
+    cursor: pointer;
+    background: var(--header-logo-color);
 
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--btn-background-color);
 }
 
 /* --about-- */
@@ -188,7 +210,9 @@ body {
 
 .list {}
 
-.team-item {}
+.team-item {
+    background: var(--first-title-color);
+}
 
 .team-after {
     font-weight: 500;
@@ -200,7 +224,7 @@ body {
 }
 
 .team-after-title {
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -254,6 +278,19 @@ body {
 
 /* --portfolio-- */
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .portfolio body {}
 
 .portfolio {}
@@ -275,19 +312,20 @@ body {
     letter-spacing: 0.04em;
     color: var(--header-logo-color);
     cursor: pointer;
-    background: var(--btn-background-color);
+    background: var(--team-background-color);
 
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    color: var(--btn-background-color);
+    background-color: var(--btn-background-color);
+    color: var(--first-title-color);
 }
 
 
 
 .portfolio-title {
-    
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -298,7 +336,7 @@ body {
 }
 
 .portfolio-after-title {
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
